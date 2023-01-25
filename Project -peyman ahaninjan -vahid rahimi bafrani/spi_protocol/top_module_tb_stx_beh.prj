@@ -1,0 +1,4 @@
+vhdl isim_temp "spi_protocol.vhd"
+vhdl isim_temp "spi_data.vhd"
+vhdl isim_temp "top_module.vhd"
+vhdl isim_temp "top_module_tb.vhd"

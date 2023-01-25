@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinxvivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6d1ba3c98e5b4d309769c0dca8a93c4b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot i2c_module_behav xil_defaultlib.i2c_module -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/I2C/I2C/I2C.srcs/sources_1/new/I2C.vhd:104]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit i2c_module in library work failed.

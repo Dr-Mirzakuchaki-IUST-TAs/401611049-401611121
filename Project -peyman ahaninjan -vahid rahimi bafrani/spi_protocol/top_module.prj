@@ -1,0 +1,3 @@
+vhdl work "spi_protocol.vhd"
+vhdl work "spi_data.vhd"
+vhdl work "top_module.vhd"

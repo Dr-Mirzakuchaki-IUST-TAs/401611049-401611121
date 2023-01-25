@@ -1,0 +1,567 @@
+
+*** Running vivado
+    with args -log Top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_module.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_module.tcl -notrace
+Command: synth_design -top Top_module -part xc7s50ftgb196-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18260 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 429.836 ; gain = 98.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_module' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:39]
+INFO: [Synth 8-3491] module 'controller' declared at 'E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/controller.vhd:5' bound to instance 'CNT' of component 'controller' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'controller' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/controller.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'controller' (1#1) [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/controller.vhd:38]
+INFO: [Synth 8-3491] module 'i2c_module' declared at 'E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/I2C/I2C/I2C.srcs/sources_1/new/I2C.vhd:5' bound to instance 'i2c' of component 'i2c_module' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'i2c_module' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/I2C/I2C/I2C.srcs/sources_1/new/I2C.vhd:26]
+INFO: [Synth 8-226] default block is never used [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/I2C/I2C/I2C.srcs/sources_1/new/I2C.vhd:116]
+INFO: [Synth 8-226] default block is never used [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/I2C/I2C/I2C.srcs/sources_1/new/I2C.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'i2c_module' (2#1) [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/I2C/I2C/I2C.srcs/sources_1/new/I2C.vhd:26]
+INFO: [Synth 8-3491] module 'spi_protocol' declared at 'E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/spi_protocol/spi_protocol.vhd:5' bound to instance 'spi4' of component 'spi_protocol' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'spi_protocol' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/spi_protocol/spi_protocol.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'spi_protocol' (3#1) [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/spi_protocol/spi_protocol.vhd:24]
+INFO: [Synth 8-3491] module 'SPI_SDIO' declared at 'E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/SPI_SDIO/spi_sdio/SPI_SDIO.vhd:6' bound to instance 'spi3' of component 'SPI_SDIO' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'SPI_SDIO' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/SPI_SDIO/spi_sdio/SPI_SDIO.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'SPI_SDIO' (4#1) [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/SPI_SDIO/spi_sdio/SPI_SDIO.vhd:25]
+INFO: [Synth 8-3491] module 'ram' declared at 'E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/spi_protocol/spi_data.vhd:5' bound to instance 'data' of component 'ram' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'ram' [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/spi_protocol/spi_data.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ram' (5#1) [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/spi_protocol/spi_data.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Top_module' (6#1) [E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.srcs/sources_1/new/Top_module.vhd:39]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 487.035 ; gain = 155.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 487.035 ; gain = 155.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50ftgb196-2
+INFO: [Device 21-403] Loading part xc7s50ftgb196-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 487.035 ; gain = 155.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'controller'
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "RW_CTL_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'spi_protocol'
+INFO: [Synth 8-5544] ROM "MISO_INT1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SPI_SDIO'
+INFO: [Synth 8-5544] ROM "TX0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_int1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "r_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                   start |                             0001 |                             0001
+                     i2c |                             0010 |                             0010
+               i2c_write |                             0011 |                             0011
+                ram_next |                             0100 |                             1010
+               spi_write |                             0101 |                             0111
+                     spi |                             0110 |                             0110
+                spi_read |                             0111 |                             1000
+              spi_recive |                             1000 |                             1001
+                i2c_read |                             1001 |                             0100
+              i2c_recive |                             1010 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+       delay_instruction |                              001 |                              011
+             instruction |                              010 |                              001
+                write_st |                              011 |                              010
+                 read_st |                              100 |                              110
+                delay_cs |                              101 |                              100
+            delay_finish |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'spi_protocol'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+       delay_instruction |                              001 |                              100
+             instruction |                              010 |                              001
+                write_st |                              011 |                              010
+              delay_read |                              100 |                              101
+                 read_st |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SPI_SDIO'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 565.086 ; gain = 233.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 40    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 7     
+	  11 Input     23 Bit        Muxes := 2     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	  11 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   7 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	  47 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 15    
+	   3 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	  11 Input      1 Bit        Muxes := 24    
+	   4 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 5     
+	  11 Input     23 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  11 Input      8 Bit        Muxes := 1     
+	  47 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  11 Input      1 Bit        Muxes := 24    
+Module i2c_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	  13 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+Module spi_protocol 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 2     
+Module SPI_SDIO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 2     
+Module ram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_int1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_23' (FDE) to 'data_to_module_int_reg__0i_25'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_127' (FDSE) to 'data_int_reg__0i_128'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[22]' (FDSE) to 'data/data_int_tristate_oe_reg[21]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_24' (FDE) to 'data_to_module_int_reg__0i_25'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_128' (FDSE) to 'data_int_reg__0i_129'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[21]' (FDSE) to 'data/data_int_tristate_oe_reg[20]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_25' (FDE) to 'data_to_module_int_reg__0i_27'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_129' (FDSE) to 'data_int_reg__0i_130'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[20]' (FDSE) to 'data/data_int_tristate_oe_reg[19]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_26' (FDE) to 'data_to_module_int_reg__0i_27'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_130' (FDSE) to 'data_int_reg__0i_131'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[19]' (FDSE) to 'data/data_int_tristate_oe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_27' (FDE) to 'data_to_module_int_reg__0i_29'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_131' (FDSE) to 'data_int_reg__0i_132'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[18]' (FDRE) to 'data/data_int_tristate_oe_reg[17]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_28' (FDE) to 'data_to_module_int_reg__0i_29'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_132' (FDSE) to 'data_int_reg__0i_133'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[17]' (FDRE) to 'data/data_int_tristate_oe_reg[16]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_29' (FDE) to 'data_to_module_int_reg__0i_31'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_133' (FDSE) to 'data_int_reg__0i_134'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[16]' (FDRE) to 'data/data_int_tristate_oe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_30' (FDE) to 'data_to_module_int_reg__0i_31'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_134' (FDSE) to 'data_int_reg__0i_135'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[15]' (FDRE) to 'data/data_int_tristate_oe_reg[10]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_31' (FDE) to 'data_to_module_int_reg__0i_33'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_135' (FDSE) to 'data_int_reg__0i_136'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[14]' (FDSE) to 'data/data_int_tristate_oe_reg[13]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_32' (FDE) to 'data_to_module_int_reg__0i_33'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_136' (FDSE) to 'data_int_reg__0i_137'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[13]' (FDSE) to 'data/data_int_tristate_oe_reg[12]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_33' (FDE) to 'data_to_module_int_reg__0i_35'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_137' (FDSE) to 'data_int_reg__0i_138'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[12]' (FDSE) to 'data/data_int_tristate_oe_reg[11]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_34' (FDE) to 'data_to_module_int_reg__0i_35'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_138' (FDSE) to 'data_int_reg__0i_139'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[11]' (FDSE) to 'data/data_int_tristate_oe_reg[6]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_35' (FDE) to 'data_to_module_int_reg__0i_37'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_139' (FDSE) to 'data_int_reg__0i_140'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[10]' (FDRE) to 'data/data_int_tristate_oe_reg[9]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_36' (FDE) to 'data_to_module_int_reg__0i_37'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_140' (FDSE) to 'data_int_reg__0i_141'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[9]' (FDRE) to 'data/data_int_tristate_oe_reg[8]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_37' (FDE) to 'data_to_module_int_reg__0i_39'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_141' (FDSE) to 'data_int_reg__0i_142'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[8]' (FDRE) to 'data/data_int_tristate_oe_reg[7]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_38' (FDE) to 'data_to_module_int_reg__0i_39'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_142' (FDSE) to 'data_int_reg__0i_143'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[7]' (FDRE) to 'data/data_int_tristate_oe_reg[2]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_39' (FDE) to 'data_to_module_int_reg__0i_41'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_143' (FDSE) to 'data_int_reg__0i_144'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[6]' (FDSE) to 'data/data_int_tristate_oe_reg[5]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_40' (FDE) to 'data_to_module_int_reg__0i_41'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_144' (FDSE) to 'data_int_reg__0i_145'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[5]' (FDSE) to 'data/data_int_tristate_oe_reg[4]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_41' (FDE) to 'data_to_module_int_reg__0i_43'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_145' (FDSE) to 'data_int_reg__0i_146'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[4]' (FDSE) to 'data/data_int_tristate_oe_reg[3]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_42' (FDE) to 'data_to_module_int_reg__0i_43'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_146' (FDSE) to 'data_int_reg__0i_147'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_43' (FDE) to 'data_to_module_int_reg__0i_45'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_147' (FDSE) to 'data_int_reg__0i_148'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[2]' (FDRE) to 'data/data_int_tristate_oe_reg[1]'
+INFO: [Synth 8-3886] merging instance 'data_to_module_int_reg__0i_44' (FDE) to 'data_to_module_int_reg__0i_45'
+INFO: [Synth 8-3886] merging instance 'data_int_reg__0i_148' (FDSE) to 'data_int_reg__0i_149'
+INFO: [Synth 8-3886] merging instance 'data/data_int_tristate_oe_reg[1]' (FDRE) to 'data/data_int_tristate_oe_reg[0]'
+INFO: [Synth 8-3886] merging instance 'spi3/start_int_reg' (FDE) to 'spi3/enable_int_reg'
+INFO: [Synth 8-3886] merging instance 'spi4/START_INT_reg' (FDE) to 'spi4/enable_int_reg'
+INFO: [Synth 8-3886] merging instance 'i2c/Address_RW_reg[6]' (FDE) to 'i2c/Address_RW_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i2c/Address_RW_reg[7]' (FDE) to 'i2c/Address_RW_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i2c/Address_RW_reg[3]' (FDE) to 'i2c/Address_RW_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i2c/Address_RW_reg[5] )
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_62' (FDE) to 'data_output_int_reg__0i_56'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_101' (FDE) to 'data_output_reg__0i_95'
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_61' (FDE) to 'data_output_int_reg__0i_56'
+INFO: [Synth 8-3886] merging instance 'Read_8bit_Int_reg__0i_79' (FDE) to 'Read_8bit_Int_reg__0i_74'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_100' (FDE) to 'data_output_reg__0i_95'
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_60' (FDE) to 'data_output_int_reg__0i_56'
+INFO: [Synth 8-3886] merging instance 'Read_8bit_Int_reg__0i_78' (FDE) to 'Read_8bit_Int_reg__0i_74'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_99' (FDE) to 'data_output_reg__0i_95'
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_59' (FDE) to 'data_output_int_reg__0i_56'
+INFO: [Synth 8-3886] merging instance 'Read_8bit_Int_reg__0i_77' (FDE) to 'Read_8bit_Int_reg__0i_74'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_98' (FDE) to 'data_output_reg__0i_95'
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_58' (FDE) to 'data_output_int_reg__0i_56'
+INFO: [Synth 8-3886] merging instance 'Read_8bit_Int_reg__0i_76' (FDE) to 'Read_8bit_Int_reg__0i_74'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_97' (FDE) to 'data_output_reg__0i_95'
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_57' (FDE) to 'data_output_int_reg__0i_56'
+INFO: [Synth 8-3886] merging instance 'Read_8bit_Int_reg__0i_75' (FDE) to 'Read_8bit_Int_reg__0i_74'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_96' (FDE) to 'data_output_reg__0i_95'
+INFO: [Synth 8-3886] merging instance 'data_output_int_reg__0i_56' (FDE) to 'data_output_int_reg__0i_55'
+INFO: [Synth 8-3886] merging instance 'Read_8bit_Int_reg__0i_74' (FDE) to 'Read_8bit_Int_reg__0i_73'
+INFO: [Synth 8-3886] merging instance 'data_output_reg__0i_95' (FDE) to 'data_output_reg__0i_94'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi3/SDIO_tristate_oe_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 636.059 ; gain = 304.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 636.059 ; gain = 304.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    40|
+|3     |LUT1   |     9|
+|4     |LUT2   |   270|
+|5     |LUT3   |    29|
+|6     |LUT4   |    56|
+|7     |LUT5   |    52|
+|8     |LUT6   |   188|
+|9     |MUXF7  |     1|
+|10    |FDRE   |   276|
+|11    |FDSE   |     1|
+|12    |IBUF   |    33|
+|13    |IOBUF  |     2|
+|14    |OBUF   |    17|
+|15    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   976|
+|2     |  CNT    |controller   |   158|
+|3     |  data   |ram          |   118|
+|4     |  i2c    |i2c_module   |   395|
+|5     |  spi3   |SPI_SDIO     |   128|
+|6     |  spi4   |spi_protocol |   113|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 638.793 ; gain = 307.555
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 724.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+160 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 724.254 ; gain = 406.055
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 724.254 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/MSc.Iran university of science and technology/Term 1/VHDL/Project/controller/CTRL/CTRL.runs/synth_1/Top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_module_utilization_synth.rpt -pb Top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 25 21:13:11 2023...

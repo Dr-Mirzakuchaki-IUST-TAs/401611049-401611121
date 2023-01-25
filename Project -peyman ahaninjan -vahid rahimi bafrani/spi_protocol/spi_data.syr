@@ -1,0 +1,411 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: spi_data.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "spi_data.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "spi_data"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : spi_data
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\VHDL_Elmos\spi_protocol\spi_data.vhd" into library work
+Parsing entity <spi_data>.
+Parsing architecture <Behavioral> of entity <spi_data>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <spi_data> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <spi_data>.
+    Related source file is "E:\VHDL_Elmos\spi_protocol\spi_data.vhd".
+WARNING:Xst:2999 - Signal 'r_data', unconnected in block 'spi_data', is tied to its initial value.
+    Found 32-bit register for signal <counter>.
+    Found 1-bit register for signal <new_data_flag>.
+    Found 1-bit register for signal <finish_int>.
+    Found 24-bit register for signal <all_data>.
+    Found 32-bit adder for signal <counter[31]_GND_4_o_add_2_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+Unit <spi_data> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <spi_data>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <spi_data> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <data_int_0> in Unit <spi_data> is equivalent to the following 11 FFs/Latches, which will be removed : <data_int_1> <data_int_2> <data_int_3> <data_int_8> <data_int_9> <data_int_10> <data_int_11> <data_int_16> <data_int_17> <data_int_18> <data_int_19> 
+INFO:Xst:2261 - The FF/Latch <data_int_4> in Unit <spi_data> is equivalent to the following 11 FFs/Latches, which will be removed : <data_int_5> <data_int_6> <data_int_7> <data_int_12> <data_int_13> <data_int_14> <data_int_15> <data_int_20> <data_int_21> <data_int_22> <data_int_23> 
+
+Optimizing unit <spi_data> ...
+WARNING:Xst:1293 - FF/Latch <counter_31> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_30> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_29> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_28> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_27> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_26> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_25> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_24> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_23> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_22> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_21> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_20> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_19> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_18> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_17> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_16> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_15> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_14> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_13> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_12> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_11> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_10> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_9> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_8> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_7> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_6> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_5> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_4> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_3> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_2> has a constant value of 0 in block <spi_data>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <data_int_0> in Unit <spi_data> is equivalent to the following FF/Latch, which will be removed : <counter_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block spi_data, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : spi_data.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 9
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT5                        : 1
+#      LUT6                        : 1
+#      XORCY                       : 1
+# FlipFlops/Latches                : 5
+#      FD                          : 4
+#      FDRE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 1
+#      OBUF                        : 25
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               5  out of  18224     0%  
+ Number of Slice LUTs:                    7  out of   9112     0%  
+    Number used as Logic:                 7  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:       7  out of     12    58%  
+   Number with an unused LUT:             5  out of     12    41%  
+   Number of fully used LUT-FF pairs:     0  out of     12     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 5     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.101ns (Maximum Frequency: 322.477MHz)
+   Minimum input arrival time before clock: 3.578ns
+   Maximum output required time after clock: 4.618ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.101ns (frequency: 322.477MHz)
+  Total number of paths / destination ports: 19 / 7
+-------------------------------------------------------------------------
+Delay:               3.101ns (Levels of Logic = 1)
+  Source:            data_int_0 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: data_int_0 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.525   1.182  data_int_0 (data_int_0)
+     LUT2:I1->O            1   0.254   0.681  GND_4_o_counter[31]_equal_6_o<31>1 (GND_4_o_counter[31]_equal_6_o)
+     FDRE:R                    0.459          counter_0
+    ----------------------------------------
+    Total                      3.101ns (1.238ns logic, 1.863ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.578ns (Levels of Logic = 2)
+  Source:            next_data (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: next_data to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   1.032  next_data_IBUF (next_data_IBUF)
+     LUT3:I0->O            1   0.235   0.681  next_data_finish_int_AND_3_o1 (next_data_finish_int_AND_3_o)
+     FDRE:CE                   0.302          counter_0
+    ----------------------------------------
+    Total                      3.578ns (1.865ns logic, 1.713ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              4.618ns (Levels of Logic = 1)
+  Source:            data_int_0 (FF)
+  Destination:       all_data<19> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: data_int_0 to all_data<19>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.525   1.181  data_int_0 (data_int_0)
+     OBUF:I->O                 2.912          all_data_19_OBUF (all_data<19>)
+    ----------------------------------------
+    Total                      4.618ns (3.437ns logic, 1.181ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.101|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.52 secs
+ 
+--> 
+
+Total memory usage is 4485836 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,90 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jan 25 21:13:46 2023
+| Host         : vahid running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_module_control_sets_placed.rpt
+| Design       : Top_module
+| Device       : xc7s50
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    66 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      2 |            1 |
+|      4 |            4 |
+|      5 |            1 |
+|      7 |            1 |
+|      8 |            3 |
+|      9 |            2 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              71 |           42 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            9 |
+| Yes          | No                    | No                     |             114 |           45 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              61 |           18 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------------------------+------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                  Enable Signal                 |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------+------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  clk_sys_in_IBUF_BUFG | spi4/RW_INT0_out                               |                                                |                1 |              1 |
+|  clk_sys_in_IBUF_BUFG | CNT/Address_i2c_int                            |                                                |                1 |              2 |
+|  clk_sys_in_IBUF_BUFG | i2c/Address_RW[4]_i_1_n_0                      |                                                |                2 |              4 |
+|  clk_sys_in_IBUF_BUFG | i2c/RW_CTL_int115_out                          |                                                |                4 |              4 |
+|  clk_sys_in_IBUF_BUFG | spi3/data_counter[3]_i_1_n_0                   |                                                |                1 |              4 |
+| ~clk_sys_in_IBUF_BUFG |                                                |                                                |                3 |              4 |
+|  clk_sys_in_IBUF_BUFG | spi3/bit_counter[4]_i_1_n_0                    |                                                |                2 |              5 |
+|  clk_sys_in_IBUF_BUFG | spi4/E[0]                                      |                                                |                5 |              7 |
+|  clk_sys_in_IBUF_BUFG | spi4/Read_8bit_Int_tristate_oe[7]_i_2_n_0      | spi4/Read_8bit_Int_tristate_oe[7]_i_1_n_0      |                3 |              8 |
+|  clk_sys_in_IBUF_BUFG | spi3/enable_int_reg_0                          |                                                |                5 |              8 |
+|  clk_sys_in_IBUF_BUFG | CNT/dataout_int[7]_i_1_n_0                     |                                                |                2 |              8 |
+|  clk_sys_in_IBUF_BUFG | i2c/E[0]                                       |                                                |                2 |              9 |
+|  clk_sys_in_IBUF_BUFG | spi3/E[0]                                      |                                                |                2 |              9 |
+|  clk_sys_in_IBUF_BUFG | CNT/data_to_module_int_tristate_oe[22]_i_2_n_0 | CNT/data_to_module_int_tristate_oe[22]_i_1_n_0 |                7 |             22 |
+|  clk_sys_in_IBUF_BUFG | spi3/Clk_bit                                   |                                                |                6 |             25 |
+|  clk_sys_in_IBUF_BUFG | spi4/Clk_bit                                   |                                                |               12 |             28 |
+|  clk_sys_in_IBUF_BUFG | data/counter[31]_i_2_n_0                       | data/counter[31]_i_1_n_0                       |                8 |             31 |
+|  clk_sys_in_IBUF_BUFG |                                                | i2c/Count[31]_i_1_n_0                          |                9 |             32 |
+|  clk_sys_in_IBUF_BUFG |                                                |                                                |               39 |             67 |
++-----------------------+------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+
