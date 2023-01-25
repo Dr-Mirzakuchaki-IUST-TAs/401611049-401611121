@@ -1,0 +1,28 @@
+Command line:
+   tb_SPI_SDIO_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50320
+
+Sun Jan 22 17:24:39 2023
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5153.92 Meg
+
+ Total Signals          : 26
+ Total Nets             : 79
+ Total Signal Drivers   : 20
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 9
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 563
+
+ Total Simulation Time: 0.65625 sec
+
+ Current Memory Usage: 4682.06 Meg
+
+Sun Jan 22 17:30:31 2023
+

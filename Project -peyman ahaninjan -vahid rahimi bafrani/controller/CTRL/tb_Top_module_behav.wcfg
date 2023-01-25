@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Top_module_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_Top_module" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1072389999fs"></ZoomStartTime>
+      <ZoomEndTime time="2062390000fs"></ZoomEndTime>
+      <Cursor1Time time="1200000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/tb_Top_module/clk_sys_in" type="logic">
+      <obj_property name="ElementShortName">clk_sys_in</obj_property>
+      <obj_property name="ObjectShortName">clk_sys_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/address_in" type="array">
+      <obj_property name="ElementShortName">address_in[14:0]</obj_property>
+      <obj_property name="ObjectShortName">address_in[14:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/RW_in" type="logic">
+      <obj_property name="ElementShortName">RW_in</obj_property>
+      <obj_property name="ObjectShortName">RW_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/start_pin" type="logic">
+      <obj_property name="ElementShortName">start_pin</obj_property>
+      <obj_property name="ObjectShortName">start_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/configdone" type="logic">
+      <obj_property name="ElementShortName">configdone</obj_property>
+      <obj_property name="ObjectShortName">configdone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/uut/CNT/State" type="other">
+      <obj_property name="ElementShortName">State</obj_property>
+      <obj_property name="ObjectShortName">State</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/data_output" type="array">
+      <obj_property name="ElementShortName">data_output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_output[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/CHIP_SELECT_SPI" type="logic">
+      <obj_property name="ElementShortName">CHIP_SELECT_SPI</obj_property>
+      <obj_property name="ObjectShortName">CHIP_SELECT_SPI</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/SCK_SPI" type="logic">
+      <obj_property name="ElementShortName">SCK_SPI</obj_property>
+      <obj_property name="ObjectShortName">SCK_SPI</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/MOSI" type="logic">
+      <obj_property name="ElementShortName">MOSI</obj_property>
+      <obj_property name="ObjectShortName">MOSI</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/MISO" type="logic">
+      <obj_property name="ElementShortName">MISO</obj_property>
+      <obj_property name="ObjectShortName">MISO</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/CHIP_SELECT_SDIO" type="logic">
+      <obj_property name="ElementShortName">CHIP_SELECT_SDIO</obj_property>
+      <obj_property name="ObjectShortName">CHIP_SELECT_SDIO</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/SCK_SDIO" type="logic">
+      <obj_property name="ElementShortName">SCK_SDIO</obj_property>
+      <obj_property name="ObjectShortName">SCK_SDIO</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/SDIO" type="logic">
+      <obj_property name="ElementShortName">SDIO</obj_property>
+      <obj_property name="ObjectShortName">SDIO</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/uut/i2c/State" type="other">
+      <obj_property name="ElementShortName">State</obj_property>
+      <obj_property name="ObjectShortName">State</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/RW_CTL" type="logic">
+      <obj_property name="ElementShortName">RW_CTL</obj_property>
+      <obj_property name="ObjectShortName">RW_CTL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_module/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

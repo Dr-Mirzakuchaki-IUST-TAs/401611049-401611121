@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/VHDL_Elmos/spi_protocol/tb_spi_protocol_isim_beh.exe" -prj "E:/VHDL_Elmos/spi_protocol/tb_spi_protocol_beh.prj" "work.tb_spi_protocol" 

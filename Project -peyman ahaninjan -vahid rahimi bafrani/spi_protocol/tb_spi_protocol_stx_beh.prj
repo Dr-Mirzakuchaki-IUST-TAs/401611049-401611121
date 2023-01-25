@@ -1,0 +1,2 @@
+vhdl isim_temp "spi_protocol.vhd"
+vhdl isim_temp "tb_spi_protocol.vhd"
